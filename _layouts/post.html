@@ -1,9 +1,21 @@
 ---
 layout: default
+comments: true
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<article>
+    <h2><small>{{ page.category }}</small>{{ page.title }}</h2>
+    <div class="article-wrapper">
+        <aside class="article-meta">
+            <time>{{ page.date | date_to_string }}</time>
 
-<div class="post">
-{{ content }}
-</div>
+            <p class="postmetadata">  <a href="http://jonathan-kim.com/2013/500-person-startup/#disqus_thread" title="Comment on The 500-person Startup" data-disqus-identifier="553 http://jonathan-kim.com/?p=553">0 Comments</a></p>
+
+        </aside>
+        <div class="article-content">
+            {{ content }}
+        </div>
+    </div>
+</article>
+{% if page.comments %}
+    {% include comments.html %}
+{% endif %}
