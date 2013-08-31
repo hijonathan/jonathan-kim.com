@@ -7,7 +7,7 @@ title: Your New Jekyll Site
     {% for post in site.posts %}
 
         <article>
-            <h2><a href='{{ post.url }}' title='Permanent Link to {{ post.title }}'>{{ post.title }}</h2>
+            <h2><a href='{{ site.baseurl }}{{ post.url }}' title='Permanent Link to {{ post.title }}'>{{ post.title }}</h2>
             <div class="article-wrapper">
                 <aside class="article-meta">
                     <time>{{ post.date | date_to_string }}</time>
