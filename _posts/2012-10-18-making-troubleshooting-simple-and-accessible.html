@@ -1,0 +1,42 @@
+---
+layout: post
+title: Making Troubleshooting Simple and Accessible
+categories:
+- Programming
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  _edit_last: '1'
+  Hide SexyBookmarks: '0'
+  Hide OgTags: '0'
+---
+At a certain point, every developer learns the pains of troubleshooting buggy code. Sometimes, this effort is further exacerbated by differences in environments, users, etc. Here are a few techniques that I found make debugging easier.
+
+Leave yourself a back door
+
+The biggest bang-per-buck is in adding a simple 'debug' flag to shipped code (yes, even in production). At HubSpot, we have a few flavors of this that let us do profiling on a server, expand concatenated/minified frontend code or expose template variables on a page. If a customer reports a problem, anyone—even the customer—can quickly get more information to isolate the problem.
+
+Live debugging tools
+
+I'm not a backend guy, so I can't really speak about server-side debugging tools much. However, here are a few of my favorite front-end tips:
+
+- Django Debug Toolbar
+
+This little Django app adds a helpful sidebar to your app that shows you context variables, HTTP headers, project settings, etc. You can even hook in Graphite (for logging timing) or write your own custom sidebar items to display custom metrics.
+
+- 'debugger'
+
+This very under-used javascript keyword is instrumental to debugging frontend code. The 'debugger' keyword inserts a breakpoint that your browser's developer console will respect. So rather than littering your code with console.log statements or manually inserting breakpoints from your console, you can put it in the code, right where you expect it to be.
+
+- ipdb
+
+Debugging with python's builtin pdb is like programming in a default vi. ipdb is a drop-in replacement for pdb that has tab-completion, color-coding and a bunch of other nice things that make debugging simple and fast.
+
+
+Some words of caution
+
+Some people aren't fans of leaving debugging statements in production code, and that's cool. In almost every situation, leaving breakpoints or trace statements in code is a terrible idea. However, informational logging statements or flag-controlled debugging modes are harmless and usually add a negligible amount of load. Also, the small amount of time it takes to set these things up is definitely worth it.
+
+Still sketched out? You can also use <a href="https://gist.github.com/1303442/8f73c3ae2d413c2dde76c23f87b7aca78f95257d">a bit of configuration magic</a> to make sure debug code is never committed to your project (using <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks">git post-commit hooks</a>)

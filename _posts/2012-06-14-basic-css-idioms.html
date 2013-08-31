@@ -1,0 +1,97 @@
+---
+layout: post
+title: Basic CSS Idioms
+categories: []
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  Hide SexyBookmarks: '0'
+  _edit_last: '1'
+  Hide OgTags: '0'
+---
+Sometimes, the smallest feat is the toughest. Here are some idioms to help you conquer those nagging pixels.
+
+<h3>Simpler columns</h3>
+
+Say you want to have a container with two equally-sized columns in it:
+
+<pre>
+&lt;div id=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;Column 1&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;Column 2&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+The standard way to do this is to apply a float to each column and give them a width of 50%. However, what if your columns have borders? What if you want to pad them? You'll end up with something like this:
+
+<pre>
+.column
+    border: 1px solid #ccc
+    float: left
+    padding: 10px 2%
+    width: 45%
+</pre>
+
+But you end up with an imperfect box model. In addition, if you try to get the height of the <code>#wrapper</code>, you'll notice that the height is now 0. Let's fix both of these:
+
+<pre>
+#wrapper
+    overflow: hidden
+
+.column
+    border: 1px solid #ccc
+    box-sizing: "border-box"
+    float: left
+    padding: 10px
+    width: 50%
+</pre>
+
+The <code>overflow: hidden</code> bit will fix our box height. This is the typical "clearfix" that you may have seen. Some people like to put a <code>div</code> with <code>clear: both</code> attributes, but that's adding unnecessary markup for most cases.
+
+The second trick here is the <code>box-sizing: "border-box"</code> declaration. This let's us compute the width <strong>including</strong> the borders and padding (but not margins). Now 50% <em>really</em> means half.
+
+<h3>Offset positioning</h3>
+
+The idiom here is a pretty good one to remember: an absolute-positioned element inside a relative-positioned element can be positioned relative to the container.
+
+Here's the example:
+
+<pre>
+&lt;div id=&quot;outside&quot; style=&quot;height: 300px&quot;&gt;
+    &lt;div id=&quot;inside&quot;&gt;Move me around!&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+Right now, the "inside" element is positioned at the top of the "outside" element. To get it to stick to the bottom, you could simply do this:
+
+<pre>
+#outside
+    position: relative
+
+#inside
+    bottom: 0
+    position: absolute
+</pre>
+
+The values for <code>position</code> become a little confusing in this situation, but it works beautifully.
+
+Another common case I run into is when using font-based icons like Pictos. To position the icon exactly where I want it, I can use relative/absolute positioning.
+
+The HTML:
+<pre>
+&lt;p&gt;My text&lt;/p&gt;
+</pre>
+A bit of SASS:
+<pre>
+p
+    padding-left: 20px
+    position: relative
+    &:before
+        content: &quot;i&quot;
+        font-size: 18px
+        left: -5px
+        position: absolute
+        top: -4px
+</pre>

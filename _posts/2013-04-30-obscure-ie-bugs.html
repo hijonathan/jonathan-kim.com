@@ -1,0 +1,23 @@
+---
+layout: post
+title: Obscure IE Bugs
+categories:
+- Programming
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  _edit_last: '1'
+---
+<h3>1. 5,000 CSS Rules Per File</h3>
+Turns out you can't have more than 5,000 style rules in a single CSS file. Hopefully you never run into this, but it can definitely happen when you're bundling library CSS together.
+
+<h3>2. 31 Style Tag Limit</h3>
+Source: <a href="http://support.microsoft.com/kb/262161" title="Microsoft Reports IE Style Tag Issue">http://support.microsoft.com/kb/262161</a>
+
+This one is a lot rarer, but it's definitely something you'll run into if you're working on a more mature codebase. IE7/8 will not allow you to have more than 31 <code>style</code> or <code>link</code> tags on the page. While that's not recommended in production environments, it's not entirely unheard of in dev or QA environments where having everything unbundled is helpful for debugging.
+
+3. Maximum URL Length
+
+Certain versions of IE don't allow urls longer than 255 characters. After that, stuff just gets chopped off, resulting in bad paths.

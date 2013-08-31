@@ -1,0 +1,29 @@
+---
+layout: post
+title: Should I Build My App with Meteor?
+categories:
+- Projects
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  Hide OgTags: '0'
+  Hide SexyBookmarks: '0'
+  _edit_last: '1'
+  dsq_thread_id: '1034218973'
+---
+<a href="http://meteor.com/">Meteor</a> is trying to give the world a whole new way of doing development. If you haven't had much experience with it, here are the highlights:
+<ul>
+	<li>Everything is Javascript. Gripe all you want about the choice of language, nearly any programmer would prefer the option to go soup-to-nuts in the language they know best. This also means you can share code among the entire stack.</li>
+        <li>Super tight coupling between browser and database. You can literally write CRUD operations in the browser console if you want.</li>
+       <li>Shipping code automatically refreshes all clients. No need to dance your machines behind a load balancer or wait for caches to expire.</li>
+</ul>
+
+The above are things that I and my frontend dev comrades would love to have. That said, I still think <strong>Meteor is not ready.</strong>
+
+<img src="http://jonathan-kim.com/wp/wp-content/uploads/2013/01/3549526370_2eca0595b7_o.jpg" alt="" title="sf Meteor  Nr 30" width="1338" class="aligncenter size-full wp-image-486" />
+
+I got the chance to chat with some of the engineers at a meetup recently, and they agree. <a href="http://docs.meteor.com/">Meteor has not yet reached v1,</a> and there are still several issues they need to work out (scaling, packages, etc). Even then, the main thing stunting Meteor's maturity is the lack of serious uses for it. While latency compensation and the DDP protocol are sexy, there is currently little reason to use Meteor over a stabler system unless you're building something that needs realtime updates. Because of that, almost every app in the <a href="http://madewith.meteor.com/" rel="nofollow">Made With Meteor</a> list is some flavor of a chat client or leader board.
+
+The day I consider it 'ready' is the day I can charge money for a Meteor-backed app. Despite that, I still highly recommend you check it out. The best screencast they have up is the <a href="http://meteor.com/authcast">one introducing user authentication</a>.

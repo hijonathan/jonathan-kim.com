@@ -1,0 +1,43 @@
+---
+layout: post
+title: 4 Things I Wish I Had Known About Building Social Media Tools
+categories:
+- Things I've Learned
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  _edit_last: '1'
+  Hide SexyBookmarks: '0'
+  Hide OgTags: '0'
+---
+<h3 id="1-youre-standing-on-a-fault-line">1. You're Standing on a Fault Line</h3>
+
+<p>It might seem obvious, but social media services change all the time. Everything is in constant flux, and as your product grows in scope, more of your time will be dedicated to keeping up with third-party changes. API changes are hard enough, but you also have to deal with TOS changes, architecture changes, services going up, down or away completely. Sometimes these changes are small jolts. Other times, they're earthquakes.</p>
+
+<h3 id="2-embrace-the-differences">2. Embrace the Differences</h3>
+
+<p>A Facebook "like" is a lot like a Twitter "favorite." And a 'pin' on Pinterest is pretty much a Facebook image post. Right?</p>
+
+<p>When designing a social media publisher, it's tempting to have a single interface that can publish to all channels at once, but you must resist! How different/similar these networks are to each other is an ebb and flow. By trying to abstract the features, you'll either end up compromising on which features you support or risk confusing your customers with a bad interface.</p>
+
+<p>I've run into this issue in a few ways:</p>
+
+<ol>
+    <li>Facebook and Twitter support publishing images, but LinkedIn doesn't</li>
+    <li>Facebook and LinkedIn support 'link previews' but Twitter doesn't</li>
+    <li>LinkedIn Groups accept a very useful 'headline' param, but no other channel can use it</li>
+</ol>
+
+<p>The end result is a 'conditional logic' mess, which is confusing for everyone.</p>
+
+<h3 id="3-the-playing-field-is-uneven">3. The Playing Field is Uneven</h3>
+
+<p>Having a ton of money and talent isn't enough. The big players right now have access to private APIs, white glove support and higher rate limits. These aren't features you can buy, like the Twitter Firehose. Those are privileges that you get when you have 1 million users.</p>
+
+<p>Your prospects and customers might be empathetic to the fact that you can't post to LinkedIn Company Pages, but at the end of the day, it's still something your competitor has that you don't.</p>
+
+<h3 id="4-you-call-that-an-api">4. You Call That an API?</h3>
+
+<p>Not all APIs are created equal, even in the big leagues. LinkedIn's API is probably the worst one to work with.</p>

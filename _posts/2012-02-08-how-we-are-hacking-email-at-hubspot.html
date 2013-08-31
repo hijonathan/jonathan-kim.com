@@ -1,0 +1,110 @@
+---
+layout: post
+title: How We're Hacking Email at HubSpot
+categories:
+- Productivity
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _jd_tweet_this: 'no'
+  _jd_twitter: ''
+  _wp_jd_clig: ''
+  _wp_jd_bitly: ''
+  _wp_jd_wp: ''
+  _wp_jd_yourls: ''
+  _wp_jd_url: ''
+  _wp_jd_target: ''
+  _jd_wp_twitter: ''
+  _jd_post_meta_fixed: 'true'
+  _edit_last: '1'
+  Hide SexyBookmarks: '0'
+  Hide OgTags: '0'
+  dsq_thread_id: '568859155'
+---
+If you find the topic of email tantalizingly enjoyable, you might like to read the first half of this two-part series: <a href="http://jonathan-kim.com/2012/quirks-in-email-design-part-one/">Quirks in Email Design</a>.
+<h3>Isn't Email Old News?</h3>
+Email has been around for a while, so all the good tricks would have been found by now.
+
+<strong>False.</strong>
+
+There is still much hacking to be done in email, not just by providers, but also by consumers and third-party vendors. Here's a quick list of things we're doing to make email better at HubSpot:
+<ul>
+	<li>Programmatically changing email content</li>
+	<li>Converting images to HTML (where appropriate)</li>
+	<li>Cleaner, more elegant preview text</li>
+	<li>Better environment detection (e.g. mobile vs. webmail)</li>
+	<li>A better email boilerplate</li>
+</ul>
+Let's get right down to business and take a look at the code.
+
+<h3>Programmatically Changing Content</h3>
+
+I'm not going to dive in deeply on this one since I already <a href="http://jonathan-kim.com/2011/programmatically-customizing-a-forwarded-email/">wrote about this technique</a> in November. However, I've made a small update to it that make it more reliable. Here's the latest:
+
+<script src="https://gist.github.com/1763333.js"></script>
+
+<h3>Converting Images to HTML</h3>
+
+Sometimes, you just really really want to get around those pesky image blockers to entice people to see more. To do that&mdash;but mostly to see if it was possible&mdash;my coworker <a href="http://keithbarrette.net/">Keith Barrette</a> wrote a little script that takes an image and converts it to email-safe HTML.
+
+That's right, we're talking tables. In fact, you can see an example of the outputted HTML, live in your browser, here: <a href="http://dl.dropbox.com/u/2977827/logo-html.html">http://dl.dropbox.com/u/2977827/logo-html.html</a>.
+
+This isn't for every case, and I definitely don't recommend it for use on large images. However, this experiment would be really useful on small images, like logos, which render with higher fidelity than larger, curvy images. This lets us keep a subtle reminder of the HubSpot brand in the email, even when images are blocked (which happens <strong>52% of the time</strong> according to <a href="http://www.campaignmonitor.com/blog/post/3574/image-blocking-in-email-clients-2011/">this Campaign Monitor blog post</a>).
+
+It's Keith's code, so I'll let him share it with the internet when he's ready.
+
+<h3>Elegant Preview Text</h3>
+
+One thing that's often overlooked is the preview text. Even Campaign Monitor (sorry guys) seems to overlook this in their own marketing emails. It's not a huge deal, especially if you have a long email subject, but it can sometimes make a noticeable difference. Besides, <a href="http://littlebigdetails.com/">sweating little things</a> like that are what make your emails memorable and polished.
+
+<strong>There are two main ways people will see your preview text:</strong>
+
+1. As a desktop popup/notification (mostly desktop clients):
+<img src="http://jonathan-kim.com/wp/wp-content/uploads/2012/02/s.png" alt="" title="s" width="329" height="74" class="alignnone size-full wp-image-224" />
+
+2. After the subject line (almost all clients):
+<img src="http://jonathan-kim.com/wp/wp-content/uploads/2012/02/pretext2.png" alt="" title="pretext2" width="760" class="alignnone size-full wp-image-225" />
+
+Don't get caught with "Hi Jane," or a "View This Email in Your Browser" link as your preview text. Instead, you can simply insert a 1x1px image immediately after the body tag and assign it some alt text. The alt text will get picked up by email clients as the preview text, but it'll still be properly hidden. In order to play nicely with all clients, your pixel should look like this:
+
+<script src="https://gist.github.com/1765582.js"> </script>
+
+If you're looking for bonus points, you can use that same image as your tracking pixel! Just fill the source attribute with a link to your data collection endpoint (we're doing this at HubSpot).
+
+<h3>Environment Detection</h3>
+
+Sometimes it's useful to do different things based on the environment you're working in. For instance, you'll probably want to have a mobile version of your email when it's being viewed on an iPhone, and this should be different from the printed version of your email, which should have it's own set of styles.
+
+It's also important to note that these environmental detectors can be used to trigger tracking pixels, so you can record actions, environments, device types, etc. Huge hat tip to <a href="http://litmus.com/">the innovators at Litmus</a> for inspiring me to go down this path. Those guys are doing so much <a href="http://litmus.com/email-previews">email voodoo</a> that it'll probably be years before anyone else catches up.
+
+<strong>Forwarded message:</strong> your content will be wrapped in a <code>&lt;blockquote&gt;</code> tag.
+<strong>Printed message:</strong> do a <code>@media</code> query for a print style sheet.
+<strong>Mobile:</strong> use <code>@media</code> queries. You can even use these to figure out the device's exact make and model.
+<strong>Non-Gmail:</strong> you'll probably never need this, but you can use the <code>&lt;style&gt;</code> block since Gmail doesn't support it.
+<strong>Microsoft:</strong> surprisingly, you can use conditional comments, much like you would in an HTML web page.
+
+<h3>A Better Email Boilerplate</h3>
+
+Much of the above has been rolled, in some fashion, into an improved email boilerplate here at HubSpot. It's still pretty new, but I'm hoping we can use this as a baseline for future emails we send to customers. It'll also be something we offer to customers who send email through HubSpot and use our in-house email templates.
+
+I don't yet feel comfortable about disclosing the code, but here's a summary of my favorite boilerplate features:
+<ul>
+	<li>Rock-solid wrapper. I've done 90% of the work necessary to make sure your email looks the same (and beautiful) across all email clients.</li>
+	<li>Fixes for the iPhone. This makes sure fonts, phone numbers, addresses, etc, are rendered nicely.</li>
+	<li>A "remove from mobile" CSS class. If there's something you think will clutter the mobile version of your email, just assign <code>class="hide"</code> to it, and poof!</li>
+	<li>Drop-shadows and rounded corners. This will intelligently fall back to loading images when CSS 3 isn't available.</li>
+	<li>Litmus-style tracking pixel (for internal use). We use this to track opens, forwards and prints. We also do our own click-tracking in-house.</li>
+	<li>Preview text (rolled into our tracking pixel).</li>
+</ul>
+
+Some features that I'm looking forward to adding eventually:
+
+<ul>
+	<li>More specific fixes for the different email clients.</li>
+	<li>Better hover- and click-state support.</li>
+	<li>More CSS 3 effects and smarter fallbacks.</li>
+</ul>
+
+I've been diving pretty deeply into making amazing emails at HubSpot, and I plan to upload some screenshots next week of what those emails look like. I think they're some of the best summary emails being sent by any SaaS company today (I've been keeping count). If you have any awesome ones, please share!
