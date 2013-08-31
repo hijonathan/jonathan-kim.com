@@ -7,13 +7,13 @@ title: Your New Jekyll Site
     {% for post in site.posts %}
 
         <article>
-            <h2><a href='{{ site.baseurl }}{{ post.url }}' title='Permanent Link to {{ post.title }}'>{{ post.title }}</h2>
+            <h2><a href='{{ site.baseurl }}{{ post.url }}' title='Permanent Link to {{ post.title }}'>{{ post.title }}</a></h2>
             <div class="article-wrapper">
                 <aside class="article-meta">
                     <time>{{ post.date | date_to_string }}</time>
 
                     <p class="postmetadata">
-                        <a href="{{ site.fqd }}{{ post.url }}#disqus_thread" title="Comment on {{ post.title }}">0 Comments</a></p>
+                        <a href="{{ site.fqd }}{{ post.url }}#disqus_thread" title="Comment on {{ post.title }}">Share your thoughts</a></p>
 
                 </aside>
                 <div class="article-content">
