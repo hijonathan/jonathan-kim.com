@@ -17,7 +17,13 @@
 
         <header>
             <div class="container">
-                <h1>{{ site.name }}</h1>
+                <h1>
+                    {% if page.url != '/index.html' %}
+                        <a href='/'>{{ site.name }}</a>
+                    {% else %}
+                        {{ site.name }}
+                    {% endif %}
+                </h1>
                 <p class="tagline">{{ site.tagline }}</p>
             </div>
         </header>
