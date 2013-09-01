@@ -1,0 +1,132 @@
+@import compass/css3
+@import compass/utilities/general/clearfix
+
+@import base
+$width: 780px
+
+
+header
+    margin: 0
+    width: 100%
+    +background-image(linear-gradient(#fff 80%, rgba(255, 255, 255, 0)))
+
+    body.single-post &
+        position: fixed
+        top: 0
+
+        .container
+            margin: 0 auto
+
+    body.admin-bar &
+        top: 28px
+
+    .container
+        margin: 0 auto
+        padding: 10px 0
+        width: $width
+
+    h1, p
+        display: inline
+        display: inline-block
+
+    h1
+        font-size: 25px
+        margin-right: 10px
+
+    p
+        color: #ccc
+
+// Main body
+
+.container
+    margin: 30px auto 60px
+    width: $width
+
+    body.single-post &
+        margin-top: 80px
+
+$sidebarWidth: 180px
+$contentWidth: 600px
+
+article
+    width: 100%
+
+    body.single-post &
+        +clearfix
+
+    .article-wrapper
+        +clearfix
+        position: relative
+
+    h2
+        font-weight: normal
+        line-height: 1.3em
+        margin:
+            left: $sidebarWidth
+            bottom: 20px
+        width: $contentWidth
+
+        small
+            color: #222
+            display: block
+            font-size: 16px
+            font-weight: 200
+            line-height: 1
+
+        a
+            text-decoration: none
+
+    img
+        max-width: $contentWidth
+
+    .article-meta
+        +box-sizing("border-box")
+        padding-right: 20px
+        width: $sidebarWidth
+        position: absolute
+        top: 0
+        left: 0
+
+        body.single-post &
+            position: fixed
+
+        time
+            color: #ccc
+
+        #related
+            margin-top: 1.8em
+
+            h5
+                color: #999
+                line-height: 1.4em
+                margin-bottom: 1.8em
+
+            li
+                line-height: 1.3em
+                margin-bottom: 1.8em
+
+    .article-content
+        border-bottom: 1px dashed #ccc
+        margin: 0 0 2em $sidebarWidth
+        padding-bottom: 2em
+        width: $contentWidth
+
+        ol, ul
+            margin-bottom: 1.8em
+            padding-left: 3em
+            list-style-type: none
+
+        ol
+            list-style-type: decimal
+
+        ul
+            list-style-type: disc
+
+
+// Comments
+
+#comments, #disqus_thread
+    margin-left: $sidebarWidth
+    width: $contentWidth
+
+@import responsive

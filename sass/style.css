@@ -63,56 +63,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 14, ../sass/_base.sass */
+/* line 15, _base.sass */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* line 17, ../sass/_base.sass */
+/* line 18, _base.sass */
 body {
-  font-family: "Arvo", Georgia, Garamond, serif;
-  font-weight: 300;
-  color: #333332;
-  font-size: 21px;
+  font-family: Georgia, Garamond, serif;
+  color: #222222;
+  font-size: 15px;
   line-height: 1.8em;
 }
 
-/* line 24, ../sass/_base.sass */
+/* line 24, _base.sass */
 a {
   color: #21759b;
   text-decoration: none;
-  -webkit-transition: color 0.2s linear;
-  -moz-transition: color 0.2s linear;
-  -o-transition: color 0.2s linear;
-  transition: color 0.2s linear;
 }
-/* line 29, ../sass/_base.sass */
+/* line 28, _base.sass */
 a:hover {
   color: #222222;
   text-decoration: underline;
 }
 
-/* line 33, ../sass/_base.sass */
+/* line 32, _base.sass */
 p {
-  margin-bottom: 1.8em;
+  margin-bottom: 15px;
 }
 
-/* line 39, ../sass/_base.sass */
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-  text-decoration: none;
+/* line 35, _base.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 
-/* line 42, ../sass/_base.sass */
+/* line 39, _base.sass */
 h1 {
   font-size: 30px;
 }
 
-/* line 45, ../sass/_base.sass */
+/* line 42, _base.sass */
 h2 {
-  font-size: 45px;
+  font-size: 30px;
 }
 
-/* line 48, ../sass/_base.sass */
+/* line 45, _base.sass */
 pre {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -135,18 +130,18 @@ pre {
   word-wrap: break-word;
 }
 
-/* line 66, ../sass/_base.sass */
+/* line 63, _base.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 69, ../sass/_base.sass */
+/* line 66, _base.sass */
 li {
   line-height: 1.2em;
   margin-bottom: 10px;
 }
 
-/* line 8, ../sass/style.sass */
+/* line 13, style.sass */
 header {
   margin: 0;
   width: 100%;
@@ -156,74 +151,73 @@ header {
   background-image: -o-linear-gradient(#ffffff 80%, rgba(255, 255, 255, 0));
   background-image: linear-gradient(#ffffff 80%, rgba(255, 255, 255, 0));
 }
-/* line 13, ../sass/style.sass */
+/* line 18, style.sass */
 body.single-post header {
   position: fixed;
   top: 0;
 }
-/* line 17, ../sass/style.sass */
+/* line 22, style.sass */
 body.single-post header .container {
   margin: 0 auto;
 }
-/* line 20, ../sass/style.sass */
+/* line 25, style.sass */
 body.admin-bar header {
   top: 28px;
 }
-/* line 23, ../sass/style.sass */
+/* line 28, style.sass */
 header .container {
   margin: 0 auto;
   padding: 10px 0;
-  width: 780px;
+  width: 920px;
 }
-/* line 28, ../sass/style.sass */
+/* line 33, style.sass */
 header h1, header p {
   display: inline;
   display: inline-block;
 }
-/* line 32, ../sass/style.sass */
+/* line 37, style.sass */
 header h1 {
   font-size: 25px;
   margin-right: 10px;
 }
-/* line 36, ../sass/style.sass */
+/* line 41, style.sass */
 header p {
   color: #cccccc;
 }
 
-/* line 41, ../sass/style.sass */
+/* line 46, style.sass */
 .container {
   margin: 30px auto 60px;
-  width: 780px;
+  width: 920px;
 }
-/* line 45, ../sass/style.sass */
+/* line 50, style.sass */
 body.single-post .container {
   margin-top: 80px;
 }
 
-/* line 51, ../sass/style.sass */
+/* line 56, style.sass */
 article {
   width: 100%;
 }
-/* line 54, ../sass/style.sass */
+/* line 59, style.sass */
 body.single-post article {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 57, ../sass/style.sass */
+/* line 62, style.sass */
 article .article-wrapper {
   overflow: hidden;
   *zoom: 1;
-  position: relative;
 }
-/* line 61, ../sass/style.sass */
+/* line 65, style.sass */
 article h2 {
   font-weight: normal;
   line-height: 1.3em;
   margin-left: 180px;
   margin-bottom: 20px;
-  width: 600px;
+  width: 560px;
 }
-/* line 69, ../sass/style.sass */
+/* line 73, style.sass */
 article h2 small {
   color: #222222;
   display: block;
@@ -231,148 +225,158 @@ article h2 small {
   font-weight: 200;
   line-height: 1;
 }
-/* line 76, ../sass/style.sass */
+/* line 80, style.sass */
 article h2 a {
   text-decoration: none;
 }
-/* line 79, ../sass/style.sass */
+/* line 83, style.sass */
 article img {
-  max-width: 600px;
+  max-width: 560px;
 }
-/* line 82, ../sass/style.sass */
+/* line 86, style.sass */
 article .article-meta {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  float: left;
   padding-right: 20px;
   width: 180px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
-/* line 90, ../sass/style.sass */
+/* line 92, style.sass */
 body.single-post article .article-meta {
   position: fixed;
 }
-/* line 93, ../sass/style.sass */
+/* line 95, style.sass */
 article .article-meta time {
   color: #cccccc;
 }
-/* line 96, ../sass/style.sass */
+/* line 98, style.sass */
 article .article-meta #related {
-  margin-top: 1.8em;
+  margin-top: 15px;
 }
-/* line 99, ../sass/style.sass */
+/* line 101, style.sass */
 article .article-meta #related h5 {
   color: #999999;
+  font-size: 13px;
   line-height: 1.4em;
-  margin-bottom: 1.8em;
+  margin-bottom: 10px;
 }
-/* line 104, ../sass/style.sass */
+/* line 107, style.sass */
 article .article-meta #related li {
+  font-size: 15px;
   line-height: 1.3em;
-  margin-bottom: 1.8em;
+  margin-bottom: 10px;
 }
-/* line 108, ../sass/style.sass */
+/* line 112, style.sass */
 article .article-content {
   border-bottom: 1px dashed #cccccc;
-  margin: 0 0 2em 180px;
-  padding-bottom: 2em;
-  width: 600px;
+  float: left;
+  margin: 0 180px 10px 0;
+  padding-bottom: 10px;
+  width: 560px;
 }
-/* line 114, ../sass/style.sass */
+/* line 119, style.sass */
+body.single-post article .article-content {
+  margin-left: 180px;
+}
+/* line 122, style.sass */
 article .article-content ol, article .article-content ul {
-  margin-bottom: 1.8em;
-  padding-left: 3em;
+  font-size: 13px;
+  margin-bottom: 15px;
+  padding-left: 40px;
   list-style-type: none;
 }
-/* line 119, ../sass/style.sass */
+/* line 128, style.sass */
+article .article-content ol li, article .article-content ul li {
+  line-height: 1.7;
+}
+/* line 131, style.sass */
 article .article-content ol {
   list-style-type: decimal;
 }
-/* line 122, ../sass/style.sass */
+/* line 134, style.sass */
 article .article-content ul {
   list-style-type: disc;
 }
 
-/* line 128, ../sass/style.sass */
+/* line 140, style.sass */
 #comments, #disqus_thread {
-  margin-left: 180px;
-  width: 600px;
+  margin: 0 auto;
+  width: 560px;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 3, ../sass/_responsive.sass */
+  /* line 3, _responsive.sass */
   body {
     font-size: 18px;
     padding: 20px;
   }
 
-  /* line 7, ../sass/_responsive.sass */
+  /* line 7, _responsive.sass */
   .container {
     width: 100%;
   }
-  /* line 10, ../sass/_responsive.sass */
+  /* line 10, _responsive.sass */
   body.single-post .container {
     margin-top: 30px;
   }
 
-  /* line 13, ../sass/_responsive.sass */
+  /* line 13, _responsive.sass */
   header {
     width: auto;
   }
-  /* line 16, ../sass/_responsive.sass */
+  /* line 16, _responsive.sass */
   body.single-post header {
     position: static;
   }
-  /* line 19, ../sass/_responsive.sass */
+  /* line 19, _responsive.sass */
   header .container {
     border-bottom: 1px dashed #cccccc;
     padding: 0 0 10px 0;
     width: auto;
   }
-  /* line 24, ../sass/_responsive.sass */
+  /* line 24, _responsive.sass */
   header h1 {
     display: block;
     font-size: 20px;
     margin: 0;
     text-align: center;
   }
-  /* line 30, ../sass/_responsive.sass */
+  /* line 30, _responsive.sass */
   header .tagline {
     display: none;
   }
 
-  /* line 35, ../sass/_responsive.sass */
+  /* line 35, _responsive.sass */
   article h2 {
     font-size: 24px;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
   }
-  /* line 42, ../sass/_responsive.sass */
+  /* line 42, _responsive.sass */
   article img {
     height: 100%;
     width: 100%;
   }
-  /* line 46, ../sass/_responsive.sass */
+  /* line 46, _responsive.sass */
   article .article-meta {
     display: none;
   }
-  /* line 49, ../sass/_responsive.sass */
+  /* line 49, _responsive.sass */
   article .article-content {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
   }
-  /* line 55, ../sass/_responsive.sass */
+  /* line 55, _responsive.sass */
   body.single-post article .article-content {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
   }
 
-  /* line 63, ../sass/_responsive.sass */
+  /* line 63, _responsive.sass */
   #comments, #disqus_thread {
     width: 100%;
   }
