@@ -22,7 +22,7 @@ I successfully used Dharmesh's advice to [dedicate myself to HubSpot]({% post_ur
 >
 > ...insert some platitude...
 >
-> I want to be fair and respectful of your time, and I'm already over-extended at the moment. I hate to turn down the opportunity to meet, but would it be ok if I reached out to when I have more time to really connect?
+> I want to be fair and respectful of your time, and I'm already over-extended at the moment. I hate to turn down the opportunity to meet, but would it be ok if I reached out to you when I have more time to really connect?
 
 ### Breaking it Down
 
