@@ -32,13 +32,13 @@ Honestly, it's as much about your time as it is theirs, but this emphasizes that
 
 #### I'm already over-extended at the moment.
 
-__Tell them the truth.__ Your time is finite, and there are more important things you could be doing. If that weren't the case, you should have hunted this person down and squeezed out any amount of downtime they have. Your time is already booked, you just may not know it yet.
+__Admit the truth.__ Your time is finite, and there are more important things you could be doing. If that weren't the case, you should have hunted this person down and squeezed out any amount of downtime they have. Your time is already booked, you just may not know it yet.
 
 #### I hate to turn down the opportunity to meet.
 
 This is more than just a transition&mdash;__it's intention__. In this sentence, you are very politely turning down the opportunity to meet. It is not up for debate.
 
-#### Would it be ok if I reached out to when I have more time to really connect?
+#### Would it be ok if I reached out to you when I have more time to really connect?
 
 Put off a meeting until an undecided time. __Do not cave__ here by amending, "in a week," because that adds the responsibility and expectation of a follow up. That brings in a boatload of other issues, all of which can be avoided by simply not giving a date.
 
