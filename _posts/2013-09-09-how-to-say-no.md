@@ -10,9 +10,9 @@ published: true
 ---
 ![Saying no]({{ site.baseurl }}/assets/images/no.jpg)
 
-One of the things I struggled with was saying "no" to people. I emailed my mentors about it, posted [the question on Quora](http://www.quora.com/Self-Improvement/How-can-a-person-learn-to-say-no) and sought advice often. The turning point came from something Dharmesh said.
+One of the things I struggled with was saying "no" to people. I emailed my mentors about it, posted [the question on Quora](http://www.quora.com/Self-Improvement/How-can-a-person-learn-to-say-no) and sought advice often. The turning point came from something [Dharmesh](https://twitter.com/dharmesh) said.
 
-> Remember that your time is finite. Every opportunity you say "no" to means there's one more you can say "yes" to.
+> Remember that your time is finite. Every opportunity you say "no" to means there's more that you can say "yes" to.
 
 I successfully used Dharmesh's advice to [dedicate myself to HubSpot]({% post_url 2011-11-14-giving-monogamy-a-try %}) 100%. That perspective continued to work when I was approached to work on side projects, but I still felt tempted when it came to networking. Meeting someone new seemed a one-time event, and armed with that attitude, I accrued a lot of weak and useless connections. I eventually learned that __a real relationship requires constant gardening__. Through over a dozen polite refusals for "coffee," I came up with a response that's been extremely helpful in respecting that fact.
 
