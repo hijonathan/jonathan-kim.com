@@ -5,3 +5,4 @@ fqd: http://jonathan-kim
 domain: jonathan-kim.com
 
 pygments: true
+permalink: /:year/:title/
