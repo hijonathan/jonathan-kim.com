@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "Arvo", Georgia, Garamond, serif;
   font-weight: 300;
-  color: #333332;
+  color: #555555;
   font-size: 19px;
   line-height: 1.8em;
 }
@@ -402,5 +402,6 @@ article .article-content ul {
   /* line 63, ../sass/_responsive.sass */
   #comments, #disqus_thread {
     width: 100%;
+    margin-left: 0;
   }
 }
