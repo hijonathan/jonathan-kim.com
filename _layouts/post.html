@@ -18,6 +18,9 @@ comments: true
         </div>
     </div>
 </article>
+
 {% if page.comments %}
     {% include comments.html %}
+{% else %}
+    <!-- No comments -->
 {% endif %}
