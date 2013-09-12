@@ -5,7 +5,12 @@
     var disqus_domain = 'disqus.com';
     var disqus_shortname = 'jonathan-kim';
     var disqus_title = '{{ page.title }}';
-    // var disqus_identifier = '526 http://jonathan-kim.com/?p=526';
+
+    {% if page.disqus_identifier %}
+        var disqus_identifier = '{{ page.disqus_identifier }}';
+    {% else %}
+        var disqus_identifier = '{{ page.id }}';
+    {% endif %}
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
