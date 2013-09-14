@@ -2,17 +2,12 @@
 @import compass/css3
 
 // Constants
-$font: 'Arvo', Georgia, Garamond, serif
+$font: 'Helvetica Neue', Helvetica, sans-serif
 $headingFont: 'Lato', 'Helvetica Neue', Helvetica, sans-serif
 
 $linkBlue: #21759B
 $linkLightBlue: #1b8bff
 
-%serif
-    font-family: $font
-
-%sans-serif
-    font-family: $headingFont
 
 body
     font-family: $font
@@ -34,7 +29,7 @@ p
     margin-bottom: 1.8em
 
 #{headings()}
-    @extend %sans-serif
+    font-family: $headingFont
 
     a:hover
         text-decoration: none
