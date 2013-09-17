@@ -95,23 +95,24 @@ p {
 /* line 31, ../sass/_base.sass */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1;
 }
-/* line 34, ../sass/_base.sass */
+/* line 35, ../sass/_base.sass */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   text-decoration: none;
 }
 
-/* line 37, ../sass/_base.sass */
+/* line 38, ../sass/_base.sass */
 h1 {
   font-size: 30px;
 }
 
-/* line 40, ../sass/_base.sass */
+/* line 41, ../sass/_base.sass */
 h2 {
   font-size: 45px;
 }
 
-/* line 43, ../sass/_base.sass */
+/* line 44, ../sass/_base.sass */
 pre {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -134,18 +135,18 @@ pre {
   word-wrap: break-word;
 }
 
-/* line 60, ../sass/_base.sass */
+/* line 61, ../sass/_base.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 63, ../sass/_base.sass */
+/* line 64, ../sass/_base.sass */
 li {
   line-height: 1.2em;
   margin-bottom: 10px;
 }
 
-/* line 67, ../sass/_base.sass */
+/* line 68, ../sass/_base.sass */
 blockquote {
   border-left: 6px solid #21759b;
   padding-left: 1.4em;
