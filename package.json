@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Personal website.",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "jekyll": "jekyll serve --watch"
   },
   "repository": {
     "type": "git",
