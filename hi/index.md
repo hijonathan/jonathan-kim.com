@@ -6,7 +6,7 @@ If you'd like to stay in touch and get a quarterly update of what I'm working on
 
 Where was I? Oh right, sign up. **There's a prize.** Also, I reserve the right to add you as an [Appcues](http://www.appcues.com) lead. Just sayin.
 
-<div style='width: 400px; margin: 0 auto'>
+<div style='max-width: 400px; margin: 0 auto'>
     <script charset="utf-8" src="//js.hubspot.com/forms/current.js">
     </script>
     <script>
