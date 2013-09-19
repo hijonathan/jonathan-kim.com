@@ -2,7 +2,7 @@
 layout: page
 title: Staying in touch is hard :\
 ---
-![The Journey Ahead]({{ site.baseurl }}/assets/images/maui.png)
+<img title='The Journey Ahead' src='{{ site.baseurl }}/assets/images/maui.png' width='100%' />
 
 If you'd like to stay in touch and get a quarterly update of what I'm working on, just add your contact info. I promise not to spam you with much, as it'll be a struggle to find time for this and [Appcues](http://www.appcues.com) and my girlfriend and rock climbing and paninis and...
 
