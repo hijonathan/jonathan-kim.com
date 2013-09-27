@@ -9,7 +9,7 @@ If you'd like to stay in touch and get a quarterly update of what I'm working on
 Where was I? Oh right, sign up. **There's a prize.** Also, I reserve the right to add you as an Appcues lead. Just sayin.
 
 <div style='max-width: 400px; margin: 0 auto'>
-    <script charset="utf-8" src="//js.hubspot.com/forms/current.js">
+    <script charset="utf-8" src="//js.hs-analytics.net/forms/current.js">
     </script>
     <script>
       hbspt.forms.create({
