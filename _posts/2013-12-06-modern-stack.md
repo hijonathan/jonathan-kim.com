@@ -6,8 +6,6 @@ tags: []
 status: draft
 type: post
 ---
-![A picture representing A Modern Front End Stack]({{ site.baseurl }}/assets/images/arcade.jpg)
-
 Building Appcues has also given me the chance to start with a fresh tech stack. As a frontend guy, I've always dreamed of a single language, [no backend](http://nobackend.org) setup that let me move quickly. Hopefully this will be helpful for other frontend devs looking to build new apps.
 
 ### In a Nutshell
@@ -18,6 +16,9 @@ Here's what I ended up with:
 - **[Firebase](https://www.firebase.com/)** for the database + API.
 - **[Divshot.io](http://www.divshot.io/)** for hosting (previously on [Github Pages](http://pages.github.com/)).
 - **[Wercker](http://wercker.com/)** for continuous integration.
+
+![A picture representing A Modern Front End Stack]({{ site.baseurl }}/assets/images/arcade.jpg)
+[Arcade of dreams](http://chrisdanger.com/index.php?/arcade-of-dreams/), by Chris Danger.
 
 ### The Goals
 
