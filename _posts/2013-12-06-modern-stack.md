@@ -23,7 +23,7 @@ Here's what I ended up with:
 
 ### The Goals
 
-Goal #1 was to have no middle layer—not even a node. Middle layers are great for processing data, but they also add extra overhead which requires even more overhead to keep it fast, and so on and so on.
+Goal #1 was to have no middle layer—not even node. Middle layers are great for processing data, but they also add extra overhead. That overhead then requires even more overhead to keep it fast, and so on and so on.
 
 Goal #2 was that I wanted something free or nearly free. For me, this also meant looking for vendors that would let me grow to 100 customers before I needed to pay.
 
