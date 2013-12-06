@@ -65,13 +65,16 @@ Jury is still out on that one.
 
 ### How it Works Together
 
-When I push commits to Github, Wercker gets the webhook and starts building two copies of the project (development and production).
+It all starts with a commit.
 
-Wercker, to it's credit, does a great job getting dependencies, compiling, minifying and then testing my code. Assuming those steps all pass successfully, Wercker then queues up two Divshot deploys.
+1. Push commits to Github.
+2. Wercker is notified of the commit and gets the code.
+3. Wercker sets up an environment and builds two versions of the project (dev and prod).
+4. Wercker runs the tests and bails if any of them fail.
+5. If everything passed, Wercker queues up deploys to Divshot.
+6. If the deploys are successful, Wercker tags the git commit with the environment name.
 
-Wercker automatically deploys the development and production builds to their respective environments. In the future, I plan to use Divshot's `promote` command better so that builds go from staging to production after a certain amount of time or perhaps some extra tests are run. Not sure yet.
-
-Upon successful deploy, Wercker then tags the git commit with the name of the environment (e.g. "appcues-staging") and pushes those tags to the repo. It's a convenient way for me to keep track of what is currently deployed.
+In the future, I plan to use Divshot's `promote` command better so that builds go from staging to production after a certain amount of time or perhaps some extra tests are run. Not sure yet. The git tagging is just a convenient way for me to keep track of what is currently deployed.
 
 And that's it!
 
