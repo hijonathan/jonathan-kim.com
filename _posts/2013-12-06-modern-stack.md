@@ -6,7 +6,7 @@ tags: []
 status: draft
 type: post
 ---
-![A picture representing A Modern Front End Stack](http://placekitten.com/g/600/400)
+![A picture representing A Modern Front End Stack]({{ site.baseurl }}/assets/images/arcade.jpg)
 
 Building Appcues has also given me the chance to start with a fresh tech stack. As a frontend guy, I've always dreamed of a single language, [no backend](http://nobackend.org) setup that let me move quickly. Hopefully this will be helpful for other frontend devs looking to build new apps.
 
