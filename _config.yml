@@ -4,5 +4,7 @@ baseurl:
 fqd: http://jonathan-kim.com
 domain: jonathan-kim.com
 
+exclude: ['sass', 'package.json', 'Gruntfile', 'wordpress.xml', 'generators']
+
 pygments: true
 permalink: /:year/:title/
