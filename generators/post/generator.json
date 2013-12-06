@@ -1,0 +1,8 @@
+{
+    "files": [{
+        "from": "post.md.hbs",
+        "to": "_posts/{{slug name}}.md"
+    }],
+
+    "dependencies": []
+}

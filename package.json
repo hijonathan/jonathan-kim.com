@@ -17,6 +17,7 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-compass": "~0.5.0",
     "grunt-contrib-cssmin": "~0.6.1",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-watch": "~0.5.3",
+    "humanize-plus": "~1.4.2"
   }
 }
