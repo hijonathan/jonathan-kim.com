@@ -1,9 +1,10 @@
 ---
 layout: post
 title: A Modern Front End Stack
-categories: []
+categories:
+- Programming
 tags: []
-status: draft
+status: published
 type: post
 ---
 Building Appcues has also given me the chance to start with a fresh tech stack. As a frontend guy, I've always dreamed of a single language, [no backend](http://nobackend.org) setup that let me move quickly. Hopefully this will be helpful for other frontend devs looking to build new apps.
