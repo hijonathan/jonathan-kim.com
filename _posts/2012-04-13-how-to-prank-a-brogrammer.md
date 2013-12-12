@@ -14,9 +14,7 @@ I love office pranks. And who these days deserves to be pranked more than **the 
 
 ### The code
 
-```
-alias mkdir='mkdir thinIce; curl -s http://lateorders.com/images/Sm%20Ice.jpg -o ./thinIce/.got-ya-bro.jpg; mv thinIce'
-```
+    alias mkdir='mkdir thinIce; curl -s http://lateorders.com/images/Sm%20Ice.jpg -o ./thinIce/.got-ya-bro.jpg; mv thinIce'
 
 Execute the above command on a brogrammer's *rig*, as he calls it. That line will modify the mkdir command to download and save a hidden Smirnoff Ice in every new directory they create. Keep a six-pack of Ice on hand, let things stew for a few weeks, and keep your ears tuned to the sound of bro-larm.
 
