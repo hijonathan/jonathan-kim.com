@@ -8,7 +8,7 @@ status: publish
 type: post
 published: true
 ---
-[Brogrammer Whitney Sorenson]({{ site.baseurl }}/assets/images/brogrammer.jpg)
+![Brogrammer Whitney Sorenson]({{ site.baseurl }}/assets/images/brogrammer.jpg)
 
 I love office pranks. And who these days deserves to be pranked more than **the brogrammer?** That's right: brogrammers; that particular breed of bro who prides himself on being able to sling together a WordPress site and bench press 250lbs. Let's hit him where it hurts.
 
