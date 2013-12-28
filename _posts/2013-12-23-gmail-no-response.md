@@ -5,6 +5,8 @@ categories: []
 tags: []
 status: published
 type: post
+redirects:
+- /Gmail-No-Response/
 ---
 ![Gmail No Response in Priority Inbox]({{ site.baseurl }}/assets/images/gmail.png)
 
