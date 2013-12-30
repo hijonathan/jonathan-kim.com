@@ -9,13 +9,15 @@ layout: none
         <link>{{ site.fqd }}</link>
         <atom:link href="{{ site.fqd }}/feed.xml" rel="self" type="application/rss+xml" />
         {% for post in site.posts limit:10 %}
-            <item>
-                <title>{{ post.title | xml_escape }}</title>
-                <description>{{ post.content | xml_escape }}</description>
-                <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-                <link>{{ site.fqd }}/{{ post.url }}</link>
-                <guid isPermaLink="true">{{ site.fqd }}/{{ post.url }}</guid>
-            </item>
+            {% unless post.status == 'draft' %}
+                <item>
+                    <title>{{ post.title | xml_escape }}</title>
+                    <description>{{ post.content | xml_escape }}</description>
+                    <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+                    <link>{{ site.fqd }}/{{ post.url }}</link>
+                    <guid isPermaLink="true">{{ site.fqd }}/{{ post.url }}</guid>
+                </item>
+            {% endunless %}
         {% endfor %}
     </channel>
 </rss>
