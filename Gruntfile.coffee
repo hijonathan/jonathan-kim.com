@@ -1,5 +1,8 @@
 # global module:false
 pkg = require './package.json'
+exec = require('child_process').exec
+
+
 module.exports = (grunt) ->
 
     # Project configuration.
@@ -39,6 +42,20 @@ module.exports = (grunt) ->
 
     # Default task.
     grunt.registerTask 'default', ['compass', 'cssmin']
+
+    grunt.registerTask 'draft', (postSlug) ->
+        unless postSlug?
+            grunt.log.error 'Please provide a post name. Something like, my-awesome-draft.'
+
+        options =
+            stdout: false
+            stderr: false
+            stdin: true
+
+        exec "./node_modules/scaffolt/scaffolt post #{postSlug}", options
+
+        # TODO: Add callback logging.
+
     grunt.registerTask 'publish', (postSlug) ->
         fileFound = false
 
