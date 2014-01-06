@@ -1,0 +1,22 @@
+---
+layout: post
+title: Tools and Services
+categories: []
+tags: []
+type: post
+---
+![So. Many. Nail guns.]({{ site.baseurl }}/assets/images/nail-guns.jpg)
+
+The difference between a tool and a service in the real world is pretty obvious. A hammer is a tool, a cashier provides a service. A tool returns value in exchange for time/effort, services return value in exchange for less value. When we don't want to put in the effort to use a tool, we can pay for a service that does it.
+
+I think most of us already have the tools we need, so the only ways to get us to switch are to **a)** change the circumstances for using them (e.g. obsolete hammers by obsoleting nails), **b)** build a better alternative (e.g. nail guns) or **c)** offer a service that does it.
+
+That last one represents the "service" in SaaS, and I think it's an important part of building and marketing a product. SaaS compaines should try to avoid hampering what [Sam Boonin, VP of Product at Zendesk](https://twitter.com/samboonin), called **tool overload**. While talking to Sam about [Appcues](http://appcues.com), he mentioned that everyone is using 3 analytics products, 2 CRMs, etc., and here I am building yet *another* tool for him to worry about.
+
+This problem is made worse by [lame growth hacking practices](https://twitter.com/hijonathan/status/372104658560770048). Somewhere along the line, the SaaS industry decided that a business is more stable if it has active users, and therefore, users need to log in every week in order for the business to be safe.
+
+Nevermind that these "users" are already busy trying to do their jobs or live their lives. Pay no mind to the fact that most of those things involve one or more tools that are more critical and time consuming. So when I hear someone say, "We're trying to get our customers to use our product more regularly," **I wonder what tool or task they're replacing.** In order to get time, you need to give time.
+
+I recently watched [Jeff Seibert talk about Crashlytics](video.svb.com/video/Jeff-Seibert-Co-Founder-of-Cras;SVB-CEO-Summit-Boston-May-2013) and fell in love with how he described the product. He said that their SDK spends most of its time asleep. It's only when an app crashes that it comes to life and starts asking for attention. Crashlytics returns value in exchange for money and requires almost no effort. That's SaaS.
+
+I'm trying to keep that in mind when building Appcues. In customer development talks, it seems like most people have the pain and resources ($$$), what they lack is time (from them, a designer, a developer, etc.) or experience. Sounds more like a problem best served with a service than a tool.

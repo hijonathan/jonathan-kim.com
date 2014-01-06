@@ -1,0 +1,23 @@
+{
+  "name": "jonathan-kim.com",
+  "version": "0.1.1",
+  "description": "Personal website.",
+  "scripts": {
+    "test": "test",
+    "jekyll": "jekyll serve --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hijonathan/jonathan-kim.com.git"
+  },
+  "author": "me@jonathan-kim.com",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "humanize-plus": "~1.4.2"
+  }
+}

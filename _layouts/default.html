@@ -5,42 +5,72 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
+        <meta property="twitter:account_id" content="110097064" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://{{ site.fqd }}/feed.xml">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        <!-- <link rel="stylesheet" href="/css/syntax.css"> -->
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/style.min.css">
 
     </head>
     <body>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
+        <header>
+            <div class="container">
+                <h1>
+                    {% if page.url != '/index.html' %}
+                        <a href='/'>{{ site.name }}</a>
+                    {% else %}
+                        {{ site.name }}
+                    {% endif %}
+                </h1>
+                <p class="tagline">{{ site.tagline }}</p>
+            </div>
+        </header>
+
+        <section>
+
+            <div class="container">
+                <!--
+                <aside class="sidebar">
+                    <form role="search" method="get" id="searchform" action="/">
+                        <input type="text" value="" name="s" id="searchbox" />
+                    </form>
+                </aside>
+                -->
+                <div class="content">
+                    {{ content }}
+                </div>
             </div>
 
-                {{ content }}
+        </section>
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
+        <footer></footer>
+
+        <script type="text/javascript">
+            (function(d,s,i,r) {
+                if (d.getElementById(i)){return;}
+                var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+                n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/114734.js';
+                e.parentNode.insertBefore(n, e);
+            })(document,"script","hs-analytics",300000);
+        </script>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-5788927-5']);
+            _gaq.push(['_setDomainName', 'jonathan-kim.com']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
 
     </body>
 </html>
