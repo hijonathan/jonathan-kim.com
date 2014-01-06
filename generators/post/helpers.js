@@ -14,11 +14,12 @@ function dateSlug() {
 
 module.exports = function(Handlebars) {
 
+    Handlebars.registerHelper('slugify', slugify);
+    Handlebars.registerHelper('dateSlug', dateSlug);
+
     Handlebars.registerHelper('slug', function(str) {
         return dateSlug() + '-' + slugify(str);
     });
-
-    Handlebars.registerHelper('slugify', slugify);
 
     Handlebars.registerHelper('titleCase', function(str) {
         return humanize.titleCase(str.replace(/-/g, ' '));
