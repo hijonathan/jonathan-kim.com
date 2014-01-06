@@ -3,7 +3,6 @@ layout: post
 title: A Business Plan You Can Actually Execute
 categories: []
 tags: []
-status: draft
 type: post
 published: false
 ---

@@ -39,3 +39,33 @@ module.exports = (grunt) ->
 
     # Default task.
     grunt.registerTask 'default', ['compass', 'cssmin']
+    grunt.registerTask 'publish', (postSlug) ->
+        fileFound = false
+
+        # Try to find the file.
+        possibleExts = ['', '.md', '.html']
+        for ext in possibleExts
+            filename = postSlug + ext
+            src = "_drafts/#{filename}"
+            if grunt.file.exists src
+                grunt.log.writeln "Draft found at #{src}."
+                fileFound = true
+                break
+            else
+                grunt.log.writeln "No draft matching #{postSlug}#{ext}."
+
+        if fileFound
+            dest = "_posts/#{dateSlug()}-#{filename}"
+            grunt.file.copy src, dest
+            grunt.log.ok "Published #{filename} from #{src} as #{dest}"
+        else
+            grunt.log.error 'Couldn\'t find posts with that name. Here are your options:'
+            grunt.log.writeln()
+            drafts = grunt.file.expand {cwd: '_drafts'}, '*'
+            for draft in drafts
+                grunt.log.writeln '- ' + draft
+
+
+dateSlug = ->
+    iso = (new Date).toISOString()
+    return iso.substr 0, iso.indexOf('T')

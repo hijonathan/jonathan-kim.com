@@ -3,7 +3,6 @@ layout: post
 title: Tools and Services
 categories: []
 tags: []
-status: draft
 type: post
 ---
 ![So. Many. Nail guns.]({{ site.baseurl }}/assets/images/nail-guns.jpg)
