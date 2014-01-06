@@ -43,20 +43,6 @@ module.exports = (grunt) ->
     # Default task.
     grunt.registerTask 'default', ['compass', 'cssmin']
 
-    #$ grunt draft:my-awesome-draft
-    grunt.registerTask 'draft', (postSlug) ->
-        unless postSlug?
-            grunt.log.error 'Please provide a post name. Something like, my-awesome-draft.'
-
-        options =
-            stdout: false
-            stderr: false
-            stdin: true
-
-        exec "./node_modules/scaffolt/scaffolt post #{postSlug}", options
-
-        # TODO: Add callback logging.
-
     #$ grunt publish:my-awesome-draft
     grunt.registerTask 'publish', (postSlug) ->
         fileFound = false
