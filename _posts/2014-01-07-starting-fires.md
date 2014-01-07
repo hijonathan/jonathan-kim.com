@@ -25,7 +25,7 @@ By the end of the day, we had over 75 high quality leads, and more were expected
 
 That might not seem like a lot, but for our size, it's a mountain. We were in a position I think many business owners fear: a surplus of customers, a shortage of inventory, and only ourselves to blame. We decided to keep fanning the fire.
 
-We quickly published a landing page and email campaign to learn a few more things from these Product Hunters while we were still relevant to them:
+We quickly published a [landing page](https://appcues-payments.herokuapp.com) and email campaign to learn a few more things from these Product Hunters while we were still relevant to them:
 
 1. Was the pain that they felt around onboarding bad enough that they'd commit money without even seeing a screenshot?
 2. Could we actually communicate that we're building a product to solve that pain?
@@ -35,17 +35,3 @@ As it turns out, they did need a solution, and we were *mostly* able to communic
 By all accounts, I'm a "planner," and Appcues already had a marketing strategy. We could have decided the timing wasn't right and ignored the surge, but I'm really glad we didn't. I'm learning that **timing will almost never be perfect,** and a startup simply needs to make the best of every good opportunity.
 
 Huge thanks to [Ryan Hooover](http://twitter.com/rrhoover) & [Nathan Bashaw](https://twitter.com/nbashaw) for creating PH and helping fan the flames. And a special thanks to [Hiten Shah](http://twitter.com/hnshah) and [Anand Rajaram](http://twitter.com/anandrajaram) for their sage advice and honest feedback when I was freaking out over what to do.
-
-
-### About the Landing Page
-
-[![I used Stripe's API to get the most up-to-date customer list, then fetched the avatars from Gravatar.]({{ site.baseurl }}/assets/images/ph-lp.png)](https://appcues-payments.herokuapp.com)
-
-The landing page was hosted on Heroku so we could accept credit cards via Stripe, which requires SSL. The landing page forumla we used was:
-
-1. The offer and why this page exists.
-2. Lots of social proof and smiling faces.
-3. FAQs (to put people's mind at ease).
-4. Alternatives (email notification or a survey).
-
-If you're interested in using it, let me know in the comments and I'll open source the code.
