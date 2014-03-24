@@ -10,7 +10,7 @@ type: post
 
 Turns out the things that I thought were hard (concurrency, caching, etc.) aren't quite as hard as all the other stuff involved in running a startup. Here's my take on what's hard about startups:
 
-### 8. Saying no to big customers.
+### 8. Thinking long-term.
 
 Taking short-term rewards and direction from a big customer can be ruinous for a startup. Remembering the company vision and staying true to that is so tempting, especially when there are bills to be paid and funding is *just around the corner.* Don't relent!
 
@@ -22,7 +22,7 @@ In order to scale, founders need to trust other people to own parts of the busin
 
 It turns out that it's extremely easy to work non-stop on something that's interesting and meaningful. That's a powerful thing (and a good sign), but don't abuse that power. The human body is weaker than the impassioned mind.
 
-### 5. Building/saying/doing.
+### 5. Building/saying/doing (aka execution).
 
 Execution is extremely difficult, and it's what differentiates good teams from great ones. When working at a comfy job doing a specialize trade (engineering, marketing, etc.), this can feel like a formidable challenge. Yet, it isn't as difficult as this next point:
 
@@ -40,4 +40,4 @@ In the beginning, startups hear "no" a lot more than "yes." And by a lot, I don'
 
 ### 1. Staying alive.
 
-Lots of things are going to go wrong. Even worse than wrong: sometimes *nothing* will happen. Persevering despite published statistics, nay-sayers and the temptations of a comfortable +$100k job is the hardest thing about starting a company. Staying alive long enough to get lucky or to try every mistake is key to success.
+Lots of things are going to go wrong. Even worse than wrong: sometimes *nothing* will happen. Persevering despite published statistics, nay-sayers and the temptations of a comfortable +$100k job is the hardest thing about starting a company. Staying alive long enough to get lucky or learn from every possible mistake is the key to success.
