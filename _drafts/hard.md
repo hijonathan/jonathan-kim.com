@@ -1,0 +1,43 @@
+---
+layout: post
+title: The Startup Heirarchy of Hard
+categories: []
+tags: []
+status: draft
+type: post
+---
+![A picture representing Heirarchy of Hard](http://placekitten.com/g/600/400)
+
+Turns out the things that I thought were hard (concurrency, caching, etc.) aren't quite as hard as all the other stuff involved in running a startup. Here's my take on what's hard about startups:
+
+### 8. Saying no to big customers.
+
+Taking short-term rewards and direction from a big customer can be ruinous for a startup. Remembering the company vision and staying true to that is so tempting, especially when there are bills to be paid and funding is *just around the corner.* Don't relent!
+
+### 7. Trusting others.
+
+In order to scale, founders need to trust other people to own parts of the business. This means hiring someone who is great at something you're terrible at and letting them do their thing.
+
+### 6. Maintaining a healthy lifestyle.
+
+It turns out that it's extremely easy to work non-stop on something that's interesting and meaningful. That's a powerful thing (and a good sign), but don't abuse that power. The human body is weaker than the impassioned mind.
+
+### 5. Building/saying/doing.
+
+Execution is extremely difficult, and it's what differentiates good teams from great ones. When working at a comfy job doing a specialize trade (engineering, marketing, etc.), this can feel like a formidable challenge. Yet, it isn't as difficult as this next point:
+
+### 4. Knowing what to build/say/do.
+
+A great engineer can build anything, but how does she know what's worth building? Being good at this skill requires a broad blend of interpersonal skills, like empathy and self-awareness, and the discipline to apply them again and again without bias.
+
+### 3. Finding good people.
+
+Despite advancements in communication and technology, finding great people is still incredibly difficult. Whether you're looking for a co-founder, first hire or nth hire, someone who is a cultural fit, technically qualified **and** at the right time in their life is tough to come by.
+
+### 2. Bouncing back from rejection.
+
+In the beginning, startups hear "no" a lot more than "yes." And by a lot, I don't mean 4 in 5 times, I mean 95 in 100. Many yes's are actually slow, polite no's. Founders need the ability to end a 2-hour sales call, knowing full well that the prospect won't buy, and immediately take the next call with unwavering positivity.
+
+### 1. Staying alive.
+
+Lots of things are going to go wrong. Even worse than wrong: sometimes *nothing* will happen. Persevering despite published statistics, nay-sayers and the temptations of a comfortable +$100k job is the hardest thing about starting a company. Staying alive long enough to get lucky or to try every mistake is key to success.
