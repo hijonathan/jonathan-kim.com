@@ -25,4 +25,4 @@ I'm not an entrepreneur—I haven't found my irrevocable cause, and I haven't ac
 
 &lt;/rant&gt;
 
-[Timmy will make you feel better](http://jonathan-kim.com/wp/wp-content/uploads/2012/07/aspiring-entrepreneur-timmy.jpg)
+![Timmy will make you feel better](http://jonathan-kim.com/wp/wp-content/uploads/2012/07/aspiring-entrepreneur-timmy.jpg)
