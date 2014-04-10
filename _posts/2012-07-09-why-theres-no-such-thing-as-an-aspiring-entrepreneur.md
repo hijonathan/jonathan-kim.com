@@ -24,5 +24,3 @@ Many people have written about the many paths to becoming an entrepreneur. Some 
 I'm not an entrepreneur—I haven't found my irrevocable cause, and I haven't acted on it—but I'm no longer going to waste energy explaining how I "aspire" to be one. I'm a doer who wants to improve the world, but until I start doing that, I'm just a guy learning from someone else's gamble.
 
 &lt;/rant&gt;
-
-![Timmy will make you feel better](http://jonathan-kim.com/wp/wp-content/uploads/2012/07/aspiring-entrepreneur-timmy.jpg)
