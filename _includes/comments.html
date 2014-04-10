@@ -4,7 +4,7 @@
     var disqus_container_id = 'disqus_thread';
     var disqus_domain = 'disqus.com';
     var disqus_shortname = 'jonathan-kim';
-    var disqus_title = '{{ page.title }}';
+    var disqus_title = '{{ page.title|xml_escape }}';
 
     {% if page.disqus_identifier %}
         var disqus_identifier = '{{ page.disqus_identifier }}';
