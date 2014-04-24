@@ -2,6 +2,10 @@
 layout: page
 title: Boston Startup Checklist
 ---
+Before starting Appcues, I had already consumed most of the startup stuff found on sites like Hacker News. I knew about MVPs, fundraising, business models, etc. I knew I needed to do those things.
+
+This is a checklist of the other stuff.
+
 
 ### 1. Talk to your co-founder(s).
 
@@ -9,19 +13,19 @@ Before starting any of the other steps, it's important to talk to your co-founde
 
 Here are a handful of good things to know beforehand:
 
-**Legal**
+#### Legal
 
 - Is there even a chance you'll raise money?
 - How is ownership split?
 - Where are your team members located?
 - Is anyone not a U.S. citizen?
 
-**Banking**
+#### Banking
 
 - How will customers pay you?
 - How will you pay vendors (credit card, check, wire, etc.)?
 
-**Accounting**
+#### Accounting
 
 - What's your projected burn rate?
 - Do you have physical assets/goods?
