@@ -1,4 +1,4 @@
-/* line 17, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -227,11 +227,9 @@ article .article-wrapper {
 article h2 {
   font-weight: normal;
   line-height: 1.3em;
-  margin-left: 180px;
   margin-bottom: 20px;
-  width: 600px;
 }
-/* line 69, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 article h2 small {
   color: #222222;
   display: block;
@@ -239,35 +237,54 @@ article h2 small {
   font-weight: 200;
   line-height: 1;
 }
-/* line 76, ../sass/style.sass */
+/* line 73, ../sass/style.sass */
 article h2 a {
   text-decoration: none;
 }
-/* line 79, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 article h3, article h4, article h5 {
   color: #222222;
   margin: 1.2em 0;
 }
-/* line 83, ../sass/style.sass */
+/* line 80, ../sass/style.sass */
 article h3 {
   font-size: 1.5em;
   padding-bottom: 0.5em;
   border-bottom: 1px solid #cccccc;
 }
-/* line 88, ../sass/style.sass */
+/* line 85, ../sass/style.sass */
 article h4 {
   font-size: 1.3em;
 }
-/* line 91, ../sass/style.sass */
+/* line 88, ../sass/style.sass */
 article h5 {
   font-size: 1.1em;
   font-weight: bold;
 }
-/* line 95, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 article img {
   max-width: 600px;
 }
-/* line 98, ../sass/style.sass */
+/* line 96, ../sass/style.sass */
+article ol, article ul {
+  margin-bottom: 1.8em;
+  padding-left: 3em;
+  list-style-type: none;
+}
+/* line 101, ../sass/style.sass */
+article ol {
+  list-style-type: decimal;
+}
+/* line 104, ../sass/style.sass */
+article ul {
+  list-style-type: disc;
+}
+/* line 107, ../sass/style.sass */
+article .article-title {
+  margin-left: 180px;
+  width: 600px;
+}
+/* line 111, ../sass/style.sass */
 article .article-meta {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -278,52 +295,38 @@ article .article-meta {
   top: 0;
   left: 0;
 }
-/* line 106, ../sass/style.sass */
+/* line 119, ../sass/style.sass */
 body.single-post article .article-meta {
   position: fixed;
 }
-/* line 109, ../sass/style.sass */
+/* line 122, ../sass/style.sass */
 article .article-meta time {
   color: #cccccc;
 }
-/* line 112, ../sass/style.sass */
+/* line 125, ../sass/style.sass */
 article .article-meta #related {
   margin-top: 1.8em;
 }
-/* line 115, ../sass/style.sass */
+/* line 128, ../sass/style.sass */
 article .article-meta #related h5 {
   color: #999999;
   line-height: 1.4em;
   margin-bottom: 1.8em;
 }
-/* line 120, ../sass/style.sass */
+/* line 133, ../sass/style.sass */
 article .article-meta #related li {
   line-height: 1.3em;
   margin-bottom: 1.8em;
 }
-/* line 124, ../sass/style.sass */
+/* line 137, ../sass/style.sass */
 article .article-content {
   border-bottom: 1px dashed #cccccc;
   margin: 0 0 2em 180px;
   padding-bottom: 2em;
   width: 600px;
 }
-/* line 130, ../sass/style.sass */
-article .article-content ol, article .article-content ul {
-  margin-bottom: 1.8em;
-  padding-left: 3em;
-  list-style-type: none;
-}
-/* line 135, ../sass/style.sass */
-article .article-content ol {
-  list-style-type: decimal;
-}
-/* line 138, ../sass/style.sass */
-article .article-content ul {
-  list-style-type: disc;
-}
 
-/* line 143, ../sass/style.sass */
+/* line 145, ../sass/style.sass */
 #comments, #disqus_thread {
   margin-left: 180px;
   width: 600px;

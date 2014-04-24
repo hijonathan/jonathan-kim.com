@@ -7,7 +7,7 @@ title: Designing Myself for Startups | Jonathan Kim @hijonathan
     {% for post in site.posts %}
         {% unless post.status == 'draft' %}
             <article>
-                <h2><a href='{{ site.baseurl }}{{ post.url }}' title='Permanent Link to {{ post.title }}'>{{ post.title }}</a></h2>
+                <h2 class="article-title"><a href='{{ site.baseurl }}{{ post.url }}' title='Permanent Link to {{ post.title }}'>{{ post.title }}</a></h2>
                 <div class="article-wrapper">
                     <aside class="article-meta">
                         <time>{{ post.date | date_to_string }}</time>
