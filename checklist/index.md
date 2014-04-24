@@ -6,7 +6,6 @@ Before starting Appcues, I had already consumed most of the startup stuff found 
 
 This is a checklist of the other stuff.
 
-
 ### 1. Talk to your co-founder(s).
 
 Before starting any of the other steps, it's important to talk to your co-founders first and understand your needs/circumstance. You should have all the answers before meeting with services professionals, or be prepared to waste time and money.
