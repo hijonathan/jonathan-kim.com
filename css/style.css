@@ -375,15 +375,15 @@ article .article-content {
   }
 
   /* line 35, ../sass/_responsive.sass */
-  article h2 {
+  article img {
+    height: 100%;
+    width: 100%;
+  }
+  /* line 39, ../sass/_responsive.sass */
+  article .article-title {
     font-size: 24px;
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
-  }
-  /* line 42, ../sass/_responsive.sass */
-  article img {
-    height: 100%;
     width: 100%;
   }
   /* line 46, ../sass/_responsive.sass */
