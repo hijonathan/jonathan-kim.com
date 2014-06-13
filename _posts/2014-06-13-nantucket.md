@@ -3,7 +3,7 @@ layout: post
 title: The Words Every Founder Needs to Hear
 categories: []
 tags: []
-status: draft
+status: publish
 type: post
 ---
 I got the chance to attend the [Nantucket Conference](http://www.nantucketconference.com/) this past weekend as a young entrepreneur. Over three days, I heard countless stories of success through failure, and I'm convinced that the best entrepreneurs are the ones who heard, "No, your idea sucks," and kept on going.
