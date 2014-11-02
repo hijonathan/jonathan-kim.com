@@ -6,7 +6,7 @@ tags: []
 status: draft
 type: post
 ---
-For the past year, I've been researching third-party client libraries. Like Google Analytics or Optimizely, Appcues gives its customers a snippet of Javascript for them to embed on their site. I've studied dozens of embed scripts and have learned a ton through our own customer implementation.
+For the past year, I've been researching third-party client libraries. Like Google Analytics or Optimizely, [Appcues](http://appcues.com) gives its customers a snippet of Javascript for them to embed on their site. I've studied dozens of embed scripts and have learned a ton through our own customer implementation.
 
 If you're building a third-party client library, this article is for you.
 
@@ -14,18 +14,18 @@ If you're building a third-party client library, this article is for you.
 
 There are a handful of things you'll need to decide before you dive in:
 
-- Synchronous or Asynchronous?
+- Synchronous or asynchronous?
 - Do you offer an API?
-- Are you rendering content (js, css, html)?
 - How frequently will your script or API change?
+- Are you rendering content (js, css, html)?
 
 These decisions may seem easy to make, but they're far more complicated to execute properly.
 
 ### They myth of synchronous javascript
 
-The choice between sync vs async has actually been made for you. The short answer: *always assume you'll be loaded asynchronously.*
+The choice between sync vs async has actually been made for you. The short answer: **always assume you'll be loaded asynchronously.**
 
-Until just a few years ago, blocking js patterns were the norm. Some scripts started loading themselves asynchronously (think Mixpanel or KISSmetrics), but in either case, those script tags were added to the HTML just as the Mixpanel or KISSmetrics provided them.
+Until just a few years ago, blocking js patterns were the norm. Some scripts started loading themselves asynchronously (think Mixpanel or KISSmetrics), but in either case, those script tags were added to the HTML just as Mixpanel or KISSmetrics provided them.
 
 With new loading conventions like AMD and CommonJS, embed scripts have little say over how they're loaded. Because of that, you should always assume your script will be loaded asynchronously, so it should be designed accordingly.
 
@@ -42,11 +42,11 @@ window._gaq = window._gaq || [];
 _gaq.push(['track', 'pageview', {some: 'data'}]);
 ```
 
-The advantage of this method is that it's very easy to design and exposes a consistent API. The main disadvantage is that the consumer has no idea what API methods are available.
+This method is well known, easy to design, and it exposes a consistent API. The main disadvantage is that the consumer has no idea what API methods are available.
 
-#### 3. Expose a Function
+#### 2. Expose a Function
 
-Another option is to expose a function which puts stuff in the correct queues for you. This is how Google now does it with their Universal Analytics script.
+A similar alternative is to expose a function which essentially does the same thing. This is how Google now does it with their Universal Analytics script.
 
 ```js
 window['GoogleAnalyticsObject'] = 'ga';
@@ -63,7 +63,7 @@ scriptEl.src = '//www.google-analytics.com/analytics.js';
 firstScript.parentNode.insertBefore(scriptEl, firstScript);
 ```
 
-It's almost identical to the array method, but calling methods now feel more natural and less error prone. When the real js script finally does load, you also have just one stub function to override.
+It's almost identical to the array method, but calling methods now feel more natural and less error prone. When the real js script finally does load, you also have just one stub function to override, and it's not the native `Array.push`.
 
 #### 3. Expose Stubs
 
@@ -98,5 +98,38 @@ for (var i = 0; i < window.analytics.methods.length; i++) {
 // ...
 ```
 
-Unlike the basic array method, this technique lets the consumer see what methods are available, but with one major tradeoff: your API can't be updated without asking consumers to update their embed scripts.
+Unlike the basic array method, this technique lets the consumer see what methods are available, **but with one major tradeoff:** your API can't be updated without asking consumers to update their embed scripts.
 
+### Safely adding content
+
+This is a huge topic, and one that will constantly be evolving with browsers. As it stands today, the major things to remember are:
+
+- Sandbox your content in an iframe.
+- Escape HTML and watch for XSS vulnerabilities.
+- Don't assume the DOM has loaded before injecting content.
+- Create your own element tags to ensure CSS namespacing.
+
+### Getting fancy
+
+I'm a huge fan of Google's new embed script. The minified version is so damn efficient, and they cleverly define the variables they need without using the `var` keyword.
+
+```js
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+```
+
+The coolest thing about their script is that the closure's arguments spell the word **isogram**, which means "a word or phrase without a repeating letter". It's so meta I love it! *Swoon.* As an added benefit, they forego the need for variable definitions or scoping via the `var` keyword.
+
+### Implementation is crucial
+
+While it's really nice to have the one-line install script, it's often not the best option. If your script needs to be loaded quickly and used asynchronously, you'll need a queue-based embed script. If you're just servicing WordPress installations or have full control over how your script gets loaded, the one-line install is more feasible.
+
+Another avenue to explore is framework middleware. Intercom.io did a good job of building middleware libraries for Django, Rails, etc. that inject themselves into the page. It's a handy way to control the implementation and have a better path for upgrades.
+
+### Going beyond
+
+There are tons of things I didn't cover in this post. Caching, initialization, and draining the queue could be blog posts of on their own.
+
+If you've seen an embed script pattern you really like, I'd love to hear about it! If there's a particular topic you think I should dive into more, let me know too.
