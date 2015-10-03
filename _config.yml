@@ -6,7 +6,7 @@ domain: jonathan-kim.com
 
 exclude: ['sass', 'package.json', 'Gruntfile', 'wordpress.xml', 'generators']
 
-pygments: true
+highlighter: true
 permalink: /:year/:title/
 redirects: yes
 markdown: kramdown
