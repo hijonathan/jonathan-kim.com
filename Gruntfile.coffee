@@ -28,6 +28,7 @@ module.exports = (grunt) ->
                 options:
                     sassDir: 'sass'
                     cssDir: 'css'
+                    noLineComments: true
 
         watch:
             compass:
