@@ -10,3 +10,5 @@ highlighter: true
 permalink: /:year/:title/
 redirects: yes
 markdown: kramdown
+
+google_analytics_id: UA-5788927-5
