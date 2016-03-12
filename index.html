@@ -4,7 +4,7 @@ title: Designing Myself for Startups | Jonathan Kim @hijonathan
 ---
 
 <div id="home">
-    {% for post in site.posts limit: 1 %}
+    {% for post in site.posts %}
         {% unless post.status == 'draft' %}
             <article>
                 <h2 class="article-title"><a href='{{ site.baseurl }}{{ post.url }}' title='Permanent Link to {{ post.title }}'>{{ post.title }}</a></h2>
