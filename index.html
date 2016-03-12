@@ -4,18 +4,17 @@ title: Designing Myself for Startups | Jonathan Kim @hijonathan
 ---
 
 <div id="home">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 1 %}
         {% unless post.status == 'draft' %}
             <article>
                 <h2 class="article-title"><a href='{{ site.baseurl }}{{ post.url }}' title='Permanent Link to {{ post.title }}'>{{ post.title }}</a></h2>
                 <div class="article-wrapper">
-                    <aside class="article-meta">
+                    <div class="article-meta">
                         <time>{{ post.date | date_to_string }}</time>
 
                         <p class="postmetadata">
                             <a href="{{ site.fqd }}{{ post.url }}#disqus_thread" title="Comment on {{ post.title }}">Share your thoughts</a></p>
-
-                    </aside>
+                    </div>
                     <div class="article-content">
                         {{ post.content }}
                     </div>

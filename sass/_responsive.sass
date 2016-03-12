@@ -1,65 +1,30 @@
+$header-height: 75px
+$avatar-height: 48px
+
 @media screen and (max-width: 480px)
 
     body
         font-size: 18px
-        padding: 20px
+        padding: 20px 5px
 
-    .container
-        width: 100%
+    #header
+        // height: $header-height
+        // background-color: #43A8F9
+        margin-bottom: 20px
+        padding-bottom: 20px
+        border-bottom: 1px dashed #ccc
 
-        body.single-post &
-            margin-top: 30px
-
-    header
-        width: auto
-
-        body.single-post &
-            position: static
-
-        .container
-            border-bottom: 1px dashed #ccc
-            padding: 0 0 10px 0
-            width: auto
+        .text-center
+            text-align: left
 
         h1
-            display: block
-            font-size: 20px
-            margin: 0
-            text-align: center
+            line-height: $avatar-height
 
-        .tagline
-            display: none
+        h1, .avatar
+            display: inline-block
+            vertical-align: top
 
-
-    article
-        img
-            height: 100%
-            width: 100%
-
-        .article-title
-            font-size: 24px
-            margin:
-                left: 0
-                right: 0
-            width: 100%
-
-        .article-meta
-            display: none
-
-        .article-content
-            margin:
-                left: 0
-                right: 0
-            width: 100%
-
-            body.single-post &
-
-                margin:
-                    left: 0
-                    right: 0
-
-                width: 100%
-
-    #comments, #disqus_thread
-        width: 100%
-        margin-left: 0
+        .avatar
+            width: $avatar-height
+            height: $avatar-height
+            margin-right: 10px

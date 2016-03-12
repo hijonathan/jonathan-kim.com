@@ -23,6 +23,11 @@ module.exports = (grunt) ->
                 dest: 'css/'
                 ext: '.min.css'
 
+        concat:
+            dist:
+                src: ['css/*.css', '!css/*.min.css', '!css/build.css']
+                dest: 'css/build.css'
+
         compass:
             compile:
                 options:
@@ -33,7 +38,7 @@ module.exports = (grunt) ->
         watch:
             compass:
                 files: '<%= compass.compile.options.sassDir %>/*.sass'
-                tasks: ['compass', 'cssmin']
+                tasks: ['compass', 'concat', 'cssmin']
 
     # These plugins provide necessary tasks.
     grunt.loadNpmTasks 'grunt-contrib-concat'
@@ -42,7 +47,7 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-watch'
 
     # Default task.
-    grunt.registerTask 'default', ['compass', 'cssmin']
+    grunt.registerTask 'default', ['compass', 'concat', 'cssmin']
 
     #$ grunt publish:my-awesome-draft
     grunt.registerTask 'publish', (postSlug) ->
