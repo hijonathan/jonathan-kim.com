@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 <article>
     <h2 class="article-title"><small>{{ page.category }}</small>{{ page.title }}</h2>
@@ -19,8 +18,4 @@ comments: true
     </div>
 </article>
 
-{% if page.comments %}
-    {% include comments.html %}
-{% else %}
-    <!-- No comments -->
-{% endif %}
+{% include comments.html %}
