@@ -45,17 +45,23 @@
             margin: 0 auto;
         }
 
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .avatar {
+            border-radius: 50%;
+        }
+
         header {
             height: 350px;
             background: url('/assets/hero-image.png') center center no-repeat;
             background-size: contain;
-            display: flex;
-            align-items: center;
-            justify-content: center
         }
 
         header .avatar {
-            border-radius: 50%;
             border: 6px solid rgba(255, 255, 255, 0.8);
         }
 
@@ -101,14 +107,13 @@
 </head>
 <body>
 
-<header class="center">
+<header class="center flex">
     <img src="/assets/avatar.jpeg" width="120" height="120" class="avatar">
 </header>
 
 <section class="center">
     <p>Hi, <strong>Jonathan Kim</strong> here.</p>
     <p>I'm the <strong><a href="https://www.appcues.com" title="Appcues is a UX platform used for onboarding, feature discovery and more" target="_blank">co-founder and CEO of Appcues</a></strong>, the  user experience platform of choice for today’s best-in-class software companies.</p>
-    <p>I’ve been fortunate to work with exceptional teams in my life who have influenced me greatly.</p>
 
     <table width="100%" class="resume">
         <tbody>
@@ -133,7 +138,20 @@
         </tbody>
     </table>
 
-    <p>I like to geek out about product, growth hacking and startups. I <a href="https://medium.com/@hijonathan" title="Jonathan Kim's most recent writing" target="_blank">frequently write</a> and speak about those topics.</p>
+    <p>I've worked with exceptional people and teams in my life, many of whom I consider friends and mentors.</p>
+
+    <br>
+    <div class="flex">
+        <img src="/assets/david-cancel.jpg" title="David Cancel" name="David Cancel" class="avatar" width="48" height="48">
+        <img src="/assets/brendan-schwartz.jpg" title="Brendan Schwartz" name="Brendan Schwartz" class="avatar" width="48" height="48">
+        <img src="/assets/chris-savage.jpg" title="Chris Savage" name="Chris Savage" class="avatar" width="48" height="48">
+        <img src="/assets/brian-halligan.jpg" title="Brian Halligan" name="Brian Halligan" class="avatar" width="48" height="48">
+        <img src="/assets/dharmesh-shah.jpg" title="Dharmesh Shah" name="Dharmesh Shah" class="avatar" width="48" height="48">
+        <img src="/assets/jeff-fagnan.jpg" title="Jeff Fagnan" name="Jeff Fagnan" class="avatar" width="48" height="48">
+    </div>
+    <br>
+
+    <p>I like to geek out about product, startups and clever solutions to common problems. I <a href="https://medium.com/@hijonathan" title="Jonathan Kim's most recent writing" target="_blank">frequently write</a> and speak about those topics.</p>
 
     <p>I’m actively looking for opportunities to write, speak or just to meet with people who want to make the world a better place.</p>
 
