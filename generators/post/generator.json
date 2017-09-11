@@ -1,8 +1,0 @@
-{
-    "files": [{
-        "from": "post.md.hbs",
-        "to": "_drafts/{{slugify name}}.md"
-    }],
-
-    "dependencies": []
-}
